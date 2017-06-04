@@ -210,10 +210,49 @@ function animate(element, json,fn) {
                 fn();
             }
         }
-       // console.log("target:" + target + ",current:" + current + ",step:" + step);
-    }, 20);
+        console.log("target:" + target + ",current:" + current + ",step:" + step);
+    }, 15);
 }
 
+function animate1(element, json,fn) {
+    clearInterval(element.timeId);
+    element.timeId = setInterval(function () {
+        var flag=true;
+        for (var attr in json) {
+            if(attr=="opacity"){
+                var current = getStyle(element, attr)*100;
+                var target=json[attr]*100;
+                //每次移动的步数
+                var step = (target - current) / 10;
+                //每次移动步数都是整数(比较大的数字)
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                current += step;//移动后的当前的像素
+                element.style[attr] = current/100;
+            }else if(attr=="zIndex"){
+                element.style[attr]=json[attr];
+            }else{
+                var current = parseInt(getStyle(element, attr));
+                var target=json[attr];
+                //每次移动的步数
+                var step = (target - current) / 10;
+                //每次移动步数都是整数(比较大的数字)
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                current += step;//移动后的当前的像素
+                element.style[attr] = current + "px";
+            }
+            if (current != target) {//到达目标后停止计时器
+                flag=false;
+            }
+        }
+        if(flag){
+            clearInterval(element.timeId);//清理计时器
+            if(fn){
+                fn();
+            }
+        }
+        console.log("target:" + target + ",current:" + current + ",step:" + step);
+    }, 1000);
+}
 
 //关于事件参数对象的工具的代码
 var evtTools={
@@ -250,5 +289,26 @@ function getClient() {
     return{
         width:window.innerWidth||document.body.clientWidth||document.documentElement.clientWidth||0,
         height:window.innerHeight||document.body.clientHeight||document.documentElement.clientHeight||0
+    }
+}
+
+//解绑事件兼容代码
+function removeEventListener(element,type,fn){
+    if(typeof(element.removeEventListener)!='undefined'){
+        element.removeEventListener(type,fn,false);
+    }else if(typeof(element.detachEvent)!='undefined'){
+        element.detachEvent("on"+type,fn);
+    }else{
+        element["on"+type]=null;
+    }
+}
+//绑定事件兼容代码
+function addEventListener(element,type,fn){
+    if(typeof (element.addEventListener)!='undefined'){
+        element.addEventListener(type,fn,false);
+    }else if(typeof (element.attachEvent)!='undefined'){
+        element.attachEvent("on"+type,fn);
+    }else{
+        element["on"+type]=fn;
     }
 }

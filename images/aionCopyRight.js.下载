@@ -1,0 +1,75 @@
+document.write('<link rel="stylesheet" type="text/css" href="'+CopyRightcss+'">');
+
+var _sdgCopyrightLink = 'http://www.shandagames.com/web/company/shulongzs.html';
+var _sdgCopyrightHtml = '';
+_sdgCopyrightHtml +=''
+
++'<div class="SDGCOPYRIGHT-wrap20130425">' 
++'	<div id="SDGCOPYRIGHT">'
+//盛大游戏LOGO和合作媒体LOGO
++'		<div class="SDGCOPYRIGHT-logo">'
++'			<a style="margin-left: -5px;" href="http://www.shandagames.com/" target="_blank" class="SDGCOPYRIGHT-logo1">盛大游戏</a>'
+//+'			<a href="http://1000y.sdo.com/web2/index/index.asp" target="_blank">'
++'				<img src="http://static.sdg-china.com/copyright/pic/aion/LOGO.png" style="float:left;margin-top: 15px;" alt="合作方Logo">'
+//+'			</a>'
++'		</div>'
+//版权主体信息
++'		<div class="SDGCOPYRIGHT-con">'
+
+
+//每个项目组自己的版权号
++'			<p>'
++'				<span class="SDGCOPYRIGHT-pr3">新出审字[2012]949号</span>'
++'				文网进字[2012]026号'
++'			</p>'
+
+//公司统一的版权号
++'			<p>'
++'				<span class="SDGCOPYRIGHT-pr3"><a href="'+_sdgCopyrightLink+'" target="_blank">沪网文（2014）0749-179号</a></span>'
++'				<span class="SDGCOPYRIGHT-pr3"><a href="'+_sdgCopyrightLink+'" target="_blank">ICP：沪B2-20100008</a></span>'
++'				<a href="'+_sdgCopyrightLink+'" target="_blank">新出网证（沪）字026号</a>'
++'			</p>'
++'			<p class="SDGCOPYRIGHT-sdlogo">'
++'				<span class="SDGCOPYRIGHT-pr3">上海数龙科技有限公司</span>'
++'				版权所有'
++'			</p>'
++'      <div class="HJ-1" id ="containerDiv"></div>'
++'		</div>'
+//右侧网络警察3个图标
++'		<div class="SDGCOPYRIGHT-priv">'
++'        <div class="HJ-2" id ="pxDiv"></div>'
++'		</div>'
+
++'	</div>'
++'</div>'
+
+document.write(_sdgCopyrightHtml);
+
+//统一官网标签
+(function(d, s) {
+   var js = d.createElement(s);
+   var sc = d.getElementsByTagName(s)[0];
+   js.src="http://static.sdg-china.com/copyright/js/copyrightcommon.js";
+   sc.parentNode.appendChild(js);
+}(document, "script"));
+
+(function(d, s) {
+   var js = d.createElement(s);
+   var sc = d.getElementsByTagName(s)[0];
+   js.src="http://static.sdg-china.com/copyright/js/pxcommon.js";
+   sc.parentNode.appendChild(js);
+}(document, "script"));
+
+//监控代码
+(function(d, s) {
+  window.config ={
+  bw_enabled:false,
+  bw_base:"http://static.sdg-china.com/yxzm/pic/",
+  siteid:"SDG-08112-30"
+};
+   var js =d.createElement(s);
+   var sc = d.getElementsByTagName(s)[0];
+   js.src="http://static.sdg-china.com/yxzm/js/ac.js";
+   sc.parentNode.insertBefore(js, sc);
+}(document, "script")); 
+

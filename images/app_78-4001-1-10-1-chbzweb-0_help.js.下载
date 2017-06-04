@@ -1,0 +1,50 @@
+
+var RainbowAppHelper_D={
+    Host:"http://app.help.sdo.com/",
+    CssVer:"20120228",
+    JsVer:"20160614",
+    head:document.getElementsByTagName('head').item(0),
+    CreateScript:function(file){
+        var new_element;
+        file=RainbowAppHelper_D.Host+file+"?v="+RainbowAppHelper_D.JsVer;
+        new_element=document.createElement("script"); 
+        new_element.setAttribute("type","text/javascript");      
+        new_element.setAttribute("src",file);     
+        new_element.setAttribute("charset","utf-8");
+        RainbowAppHelper_D.head.appendChild(new_element);
+    },
+    CreateLink:function (file){
+        var new_element;
+        file=RainbowAppHelper_D.Host+file+"?v="+RainbowAppHelper_D.CssVer;
+        new_element=document.createElement("link");
+        new_element.setAttribute("type","text/css");
+        new_element.setAttribute("rel","stylesheet");
+        new_element.setAttribute("href",file);
+        RainbowAppHelper_D.head.appendChild(new_element);
+    },
+    Init:function(){
+        try{    
+            RainbowAppHelper_D.CreateScript("js/Message.js"); 
+            RainbowAppHelper_D.CreateLink("css/AppStyle.css");
+            RainbowAppHelper_D.CreateScript("js/RainbowApp.js");
+        }catch(e){        
+        }
+    }
+};
+RainbowAppHelper_D.Init();
+
+
+        document.write("<div class='search_bar'>");
+        document.write("<div class='inside_bg'>");
+        document.write("<div class='inside_box'>");
+        document.write("<div class='searchBox'>");
+        
+        
+           document.write("<input type='text' class='search' onkeypress=\"RainbowAppHelper.KeyDownSearch(event,'http://chhelp.sdrs.sdo.com:8083/sdchweb/Default.asp?co=1&tp=5&ut=1&id=&gd=11&gm=78&ar=4001&sv=0&rl=1&ranid=0&ck=&v=0&s=chbzweb&q=');\" id='sdoquestion' onBlur=\"javascript:if(this.value=='') this.value='乌云贸易团';\" onFocus=\"javascript:if(this.value=='乌云贸易团') this.value='';\" value='乌云贸易团' maxlength='100' />");
+           
+        document.write("<input type='button' class='btn' style='width:22px;' onclick=\"RainbowAppHelper.popupCHBZ(document.getElementById('sdoquestion').value,'http://chhelp.sdrs.sdo.com:8083/sdchweb/Default.asp?co=1&tp=5&ut=1&id=&gd=11&gm=78&ar=4001&sv=0&rl=1&ranid=0&ck=&v=0&s=chbzweb&q=');\"/>");
+        document.write("</div>");
+        document.write("</div>");
+        document.write("</div>");
+        document.write("</div>");
+   

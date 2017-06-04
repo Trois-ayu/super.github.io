@@ -1,0 +1,620 @@
+
+/*底部开始*/
+/*背景图片*/
+body{
+    background: url("../images/bg_wrap.jpg") no-repeat top center;
+}
+.container1{
+    margin-top: 1106px;
+}
+
+/*关于我们*/
+.bottom .about-us{
+    height: 325px;
+    background: url("../images/bg_sec5.jpg") no-repeat top center;
+}
+
+.bottom .about-us .left-us{
+    width: 348px;
+    height: 304px;
+    float: left;
+    background: url("../images/bg_mod.png") no-repeat 0 -340px;
+}
+
+.bottom .about-us h3{
+    width: 285px;
+    height: 32px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    padding: 18px 15px 15px 48px;
+    background: url("../images/bg_icons.png") no-repeat -626px -80px;
+}
+
+.bottom .about-us .left-us p{
+    text-align: center;
+    color: #b9c5dc;
+}
+
+.bottom .about-us .left-us h6{
+    text-align: center;
+    font-size: 16px;
+    color: #73a2fe;
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.bottom .about-us .left-us ul{
+    padding: 10px 0 0 11px;
+}
+
+.bottom .about-us .left-us ul li{
+    width: 105px;
+    float: left;
+    margin-left: 3px;
+}
+
+.bottom .about-us .left-us ul li a{
+    color: #fff;
+    display: block;
+    width: 68px;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 38px;
+}
+
+.bottom .about-us .left-us ul .qq{
+    background-color: #6a94ba;
+}
+
+.bottom .about-us .left-us ul li .ico-qq{
+    background: url("../images/bg_icons.png") no-repeat 12px -471px;
+}
+.bottom .about-us .left-us ul .sina{
+    background-color: #cc8b34;
+}
+
+.bottom .about-us .left-us ul li .ico-sina{
+    background: url("../images/bg_icons.png") no-repeat -110px -471px;
+}
+
+.bottom .about-us .left-us ul .yy{
+    background-color: #b49548;
+}
+
+.bottom .about-us .left-us ul li .ico-yy{
+    background: url("../images/bg_icons.png") no-repeat -229px -471px;
+    padding-left: 30px;
+}
+
+
+
+.bottom .about-us .middle-us{
+    width: 406px;
+    height: 304px;
+    float: left;
+    margin-left: 20px;
+    background: url("../images/bg_mod.png") no-repeat;
+    position: relative;
+}
+
+.bottom .about-us .middle-us .bizhi{
+    position: absolute;
+    top: 20px;
+    left: 155px;
+}
+
+.bottom .about-us .middle-us .bizhi li{
+    float: left;
+    margin-left: 10px;
+}
+
+.bottom .about-us .middle-us .bizhi li a{
+    color: #fff;
+}
+
+.bottom .about-us .middle-us .bizhi .diandian{
+    list-style: disc;
+    color: #73a2fe;
+}
+
+.bottom .about-us .middle-us .bizhi .diandian a{
+    color: #73a2fe;
+}
+
+.bottom .about-us .middle-us .jiahao{
+    width: 26px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: 360px;
+    font-size: 24px;
+    background: url("../images/bg_mod.png") no-repeat -380px -33px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 14px;
+    color: #606A7F;
+}
+
+.bottom .about-us .middle-us .lunbotu{
+    width: 406px;
+    height: 238px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bottom .about-us .middle-us .lunbotu ul{
+    width: 1200%;
+    position: absolute;
+}
+
+.bottom .about-us .middle-us .lunbotu ul li{
+    float: left;
+}
+
+.bottom .about-us .middle-us .previous{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 100px;
+    left: -50px;
+    font-size: 24px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    line-height: 24px;
+    border-radius: 14px;
+    display: block;
+    cursor: pointer;
+}
+
+.bottom .about-us .middle-us .previous i{
+    width: 9px;
+    height: 14px;
+    display: block;
+    background: url("../images/bg_icons.png") no-repeat -400px -90px;
+    margin-left: 8px;
+    margin-top: 7px;
+}
+
+.bottom .about-us .middle-us .next{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 100px;
+    left: 430px;
+    font-size: 24px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    line-height: 22px;
+    border-radius: 14px;
+    display: block;
+    color: silver;
+    cursor: pointer;
+}
+
+.bottom .about-us .middle-us .next i{
+    width: 9px;
+    height: 14px;
+    display: block;
+    background: url("../images/bg_icons.png") no-repeat -449px -90px;
+    margin-left: 8px;
+    margin-top: 7px;
+}
+
+
+
+.bottom .about-us .right-us{
+    width: 406px;
+    height: 304px;
+    float: left;
+    margin-left: 20px;
+    background: url("../images/bg_mod.png") no-repeat;
+}
+
+.bottom .about-us .right-us h3{
+    width: 343px;
+    border-bottom: 1px solid silver;
+}
+
+.bottom .about-us .right-us p{
+    line-height: 25px;
+    margin-left: 25px;
+    color: #B9C5DC;
+}
+
+.bottom .about-us .right-us .service{
+    margin-top: 30px;
+}
+
+.bottom .about-us .right-us img{
+    float: right;
+    margin-right: 30px;
+}
+
+.bottom .about-us .right-us .search{
+    width: 150px;
+    height: 20px;
+    background-color: #333B47;
+    color: #B9C5DC;
+}
+
+.bottom .about-us .right-us .anniu{
+    width: 20px;
+    height: 20px;
+    background: url("../images/search_btn.gif") no-repeat center;
+    cursor: pointer;
+}
+
+.bottom .about-us .right-us span,a{
+    color: #f3b35c;
+}
+/*关于我们结束*/
+
+/*视频专区开始*/
+.bottom .video-prefecture{
+    height: 240px;
+    background: url("../images/bg_sec6.jpg") no-repeat top center;
+}
+
+.bottom .video-prefecture .bg-video{
+    height: 225px;
+    background: url("../images/bg_mod.png");
+}
+
+.bottom .video-prefecture .top-video{
+    position: relative;
+}
+
+.bottom .video-prefecture .top-video h3{
+    width: 177px;
+    height: 32px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    padding: 18px 15px 15px 48px;
+    background: url("../images/bg_icons.png") no-repeat -626px -80px;
+    border-bottom: 1px solid #2E2E30;
+}
+
+.bottom .video-prefecture .top-video ul{
+    position: absolute;
+    top: 20px;
+    left: 170px;
+}
+
+.bottom .video-prefecture .top-video ul li{
+    float: left;
+    margin-right: 10px;
+}
+
+.bottom .video-prefecture .top-video li a{
+    color: #fff;
+}
+
+.bottom .video-prefecture .top-video .diandian{
+    list-style: disc;
+    color: #73a2fe;
+}
+
+.bottom .video-prefecture .top-video .diandian a {
+    color: #73a2fe;
+}
+
+.bottom .video-prefecture .top-video .jiahao{
+    width: 26px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    font-size: 24px;
+    background: url("../images/bg_mod.png") no-repeat -380px -33px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 14px;
+    color: #606A7F;
+}
+
+.bottom .video-prefecture .bottom-video{
+    height: 160px;
+}
+
+.bottom .video-prefecture .bottom-video li{
+    float: left;
+    position: relative;
+    width: 240px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.bottom .video-prefecture .bottom-video li img{
+    position: absolute;
+}
+
+.bottom .video-prefecture .bottom-video li p{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 240px;
+    height: 18px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #000;
+    color: #8593b2;
+    background-color: rgba(0,0,0,.6);
+    padding: 4px 0;
+}
+
+.bottom .video-prefecture .bottom-video li .ico-play{
+    position: absolute;
+    left: 90px;
+    top: 50px;
+    display: block;
+    width: 52px;
+    height: 52px;
+    background: url("../images/bg_icons.png") no-repeat -620px -300px;
+}
+
+/*视频专区结束*/
+
+/*版本回顾开始*/
+.bottom .version-review{
+    height: 335px;
+    background: url("../images/bg_sec7.jpg") no-repeat top center;
+}
+
+.bottom .version-review .bg-version{
+    height: 335px;
+    background: url("../images/bg_mod.png");
+    position: relative;
+}
+
+.bottom .version-review .bg-version h3{
+    height: 32px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    padding: 18px 15px 15px 48px;
+    background: url("../images/bg_icons.png") no-repeat -626px -80px;
+    border-bottom: 1px solid #2E2E30;
+}
+
+.bottom .version-review .bg-version .dv-version{
+    position: relative;
+}
+
+.bottom .version-review .bg-version .dd-version{
+    width: 1120px;
+    margin-top: 70px;
+    margin-left: 35px;
+    height: 220px;
+    padding-top: 38px;
+    top: -38px;
+    /*border:1px solid green;*/
+    overflow: hidden;
+    position: relative;
+}
+
+.bottom .version-review .bg-version ul{
+    width: 600%;
+    height: 220px;
+    position: absolute;
+    /*border: 1px solid orange;*/
+
+}
+
+.bottom .version-review .bg-version ul li current{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -38px;
+    z-index: 3;
+}
+
+.bottom .version-review .bg-version ul li{
+    width: 330px;
+    height: 220px;
+    float: left;
+    text-align: center;
+    position: relative;
+    /*margin-left: 15px;*/
+    /*border: 1px solid red;*/
+    /*position: absolute;*/
+}
+
+.bottom .version-review .bg-version ul li img{
+    width: 60%;
+    height: 60%;
+    z-index: 0;
+}
+
+.bottom .version-review .bg-version .previous1{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 50px;
+    left: 17px;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    line-height: 36px;
+    border-radius: 18px;
+    display: block;
+    color: #606A7F;
+    cursor: pointer;
+}
+
+.bottom .version-review .bg-version .previous1 i{
+    width: 9px;
+    height: 17px;
+    display: block;
+    background: url("../images/bg_icons.png") no-repeat -401px -141px;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+.bottom .version-review .bg-version .next1{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    font-size: 30px;
+    background-color: black;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 18px;
+    display: block;
+    color: #606A7F;
+}
+
+.bottom .version-review .bg-version .next1 i{
+    width: 9px;
+    height: 17px;
+    display: block;
+    background: url("../images/bg_icons.png") no-repeat -451px -141px;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+/*版本回顾结束*/
+
+
+/*健康游戏公告*/
+.bottom .health-notice{
+    height: 92px;
+    padding-top: 23px;
+    background: url("../images/bg_sec8.jpg") no-repeat top center;
+}
+
+.bottom .health-notice .bg-notice{
+    height: 80px;
+    background: url("../images/bg_mod.png");
+    position: relative;
+}
+
+.bottom .health-notice .bg-notice h3{
+    height: 32px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    padding: 18px 15px 15px 48px;
+    position: absolute;
+    top: 15px;
+    left: 135px;
+}
+.bottom .health-notice .bg-notice i{
+    width: 31px;
+    height: 31px;
+    display: block;
+    position: absolute;
+    background: url("../images/bg_icons.png") no-repeat -649px 0;
+    top: 25px;
+    left: 130px;
+}
+
+.bottom .health-notice .bg-notice div{
+    float: left;
+    width: 200px;
+}
+
+.bottom .health-notice .bg-notice div p{
+    color: #B8C4DC;
+}
+
+.bottom .health-notice .bg-notice .notice1{
+    margin-top: 25px;
+    margin-left: 340px;
+}
+
+.bottom .health-notice .bg-notice .notice2{
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.bottom .health-notice .bg-notice .notice3{
+    width: 320px;
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+.bottom .health-notice .bg-notice ul li{
+    width: 100px;
+    float: left;
+    padding-left: 50px;
+    margin-top: 5px;
+    position: relative;
+    background-color: #191C22;
+}
+
+.bottom .health-notice .bg-notice ul li a{
+    color: #5C7FBD;
+}
+
+.bottom .health-notice .bg-notice ul li s{
+    width: 6px;
+    height: 10px;
+    display: block;
+    background: url("../images/bg_icons.png") no-repeat -480px -340px;
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+
+/*底步开始*/
+.footer1 {
+    height: 132px;
+    background: url("../img/bg_w.jpg")repeat-x left top;
+}
+
+.footer1 .foot-l {
+    width: 320px;
+    height: 132px;
+    position: relative;
+    float: left;
+}
+
+.footer1 .foot-l a {
+    position: absolute;
+    width: 320px;
+    height: 132px;
+    display: block;
+    background: url("../images/SDG_logo_w.jpg") no-repeat 80px 44px;
+    top: -10px;
+}
+
+.footer1 .foot-l img {
+    position: absolute;
+    left: 172px;
+    bottom: 44px;
+}
+
+.footer1 .foot-c {
+    width: 553px;
+    /*color: #f9e6e6;*/
+    color: darkgray;
+    font-size: 12px;
+    padding-top: 20px;
+    float: left;
+}
+
+.footer1 .foot-c a {
+    /*color: #f9e6e6;*/
+    color: darkgray;
+    text-decoration: none;
+}
+
+.footer1 .foot-c a:hover {
+    text-decoration: underline;
+}
+
+.footer1 .foot-r {
+    padding-top: 34px;
+}
+
+.footer1 .foot-r .foot-bottom {
+    margin-top: 10px;
+}
+
+/*底步结束*/

@@ -1,0 +1,26 @@
+/*!
+ * Date 2016-02-22
+ * Author: Davin Ma
+*/
+
+$(function() {
+  // 导航下拉
+  $(".nav li").hover(function(){$(this).addClass("active").find(".sub-menu").stop(true,true).slideDown(400)},function(){$(this).removeClass("active").find(".sub-menu").stop(true,true).delay(300).slideUp("fast")});
+  // 光环
+  function fade() {$(".motion").fadeIn(1000).fadeOut(2000);};
+  setInterval(fade, 1000);
+  // 轮播
+  $("#slider1").slidesjs({width:830,height:254,pagination:{effect:"slide"},play:{active:!0,effect:"slide",interval:3000,auto:1}});
+  $("#slider2, #slider3, #slider4").slidesjs({width:406,height:238,pagination:{effect:"slide"},play:{active:!0,effect:"slide",interval:3000,auto:0}});
+  // tab 切换
+  function tabs(detail,tab) {$(detail).soChange({thumbObj:tab,slideTime:0,thumbOverEvent:false,autoChange:false});}
+  tabs(".news-list",".news-tab li");
+  tabs(".hot-list",".hot-tab li");
+  tabs(".media-list",".media-tab li");
+  tabs(".videos-list",".videos-tab li");
+  // 版本回顾
+  //$(".carousel li:eq(2)").addClass("current");
+  $(".carousel").jCarouselLite({ btnNext: ".btn-next", btnPrev: ".btn-prev", start: $(".carousel ul li").length - 6, circular: false, visible: 5, afterEnd: function (b) { $(b[2]).addClass("current").siblings().removeClass("current") } });
+  // 统一导航
+  NavLoader.init(78,"永恒之塔","white");
+  });
